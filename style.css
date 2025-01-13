@@ -1,0 +1,43 @@
+*{
+    margin: 5px;padding:5px;
+    color: white;
+}
+body{
+    font-size: 18pt;
+    margin: 0;padding:0;
+    background-color: aliceblue;
+}
+
+.parent{
+    border: 10px solid rebeccapurple;
+}
+.child{
+    background-color: cadetblue;
+}
+
+
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 500px;
+    justify-content: start;
+    align-items: start;
+    gap: 25px;
+}
+.child{
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+.child:nth-child(2){
+    background: pink;
+    
+}
+.child:nth-child(3){
+    background: darkmagenta;
+}
+.child:nth-child(4){
+    background:darkgreen;
+}
